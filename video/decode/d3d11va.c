@@ -205,7 +205,7 @@ static struct mp_image *d3d11va_update_image_attribs(struct lavc_ctx *s,
             .MiscFlags        = 0,
             .ArraySize        = 1,
             .Usage            = D3D11_USAGE_DEFAULT,
-            .BindFlags        = D3D11_BIND_SHADER_RESOURCE,
+            .BindFlags        = D3D11_BIND_DECODER | D3D11_BIND_SHADER_RESOURCE,
             .CPUAccessFlags   = 0,
         };
         ID3D11Texture2D *new_texture = NULL;
